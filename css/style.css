@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
    font-family: "Roboto", sans-serif;
    font-size: 20px;
+} 
+div.part_1 {
+    background-color: rgb(190, 209, 203);
 }
-
+div.part_1,
+div.part_2,
+div.part_3 { 
+    margin: 50px 0px 50px 50px; 
+}
 .background_color_example {
    background-color: cadetblue;
    max-width: 300px;
@@ -14,27 +21,140 @@ body {
 .background_image_example {
    background-image: url(../img/brick_wall_background.jpg);
    display: inline-block;
+   background-size: cover;
+   background-position: 50%;
    max-width: 300px;
    margin-bottom: 50px;
 }
-
 .gradient_example {
-   background-image: linear-gradient(to bottom, rgb(154, 30, 137) 0%, rgba(126, 232, 200, 0) 100%);
+    display: inline-block;
+    max-width: 300px;
+    background-image: linear-gradient(to bottom, rgb(154, 30, 137) 0%, rgba(126, 232, 200, 0) 100%);
+    margin-bottom: 50px;
+}
+.background_repeat_example p {
+    display: inline-block; 
+    max-width: 300px;
+    margin-bottom: 50px;
 }
 
 p.repeat {
-   background-image: url(../img/vader_logo.png);
-   background-repeat: repeat;
-   background-size: auto auto;
-   color: rgb(255, 255, 255);
-}
+    background-image: url(../img/vader_logo.png);
+    background-color: rgb(220, 17, 238);
+    background-repeat: repeat;
+    background-size: 20px;
+    color: rgb(255, 255, 255);
+} 
 
 p.norepeat {
-   display: inline-block;
    background-image: url(../img/heart_icon.png);
-   background-repeat: no-repeat;  
+   background-repeat: no-repeat;
+   background-size: auto auto;  
 }
 
-.background_example {
-   background: url(../img/heart_icon.png) 50% / cover no-repeat;
+p.repeat_x {
+    background-image: url(../img/heart_icon.png);
+    background-repeat: repeat-x;
+    background-size: 30px;
+    background-color: white;
+}
+p.repeat_y {
+    background-image: url(../img/heart_icon.png);
+    background-repeat: repeat-y;
+    background-size: 30px;
+    background-color: white;
+}
+p.space {
+    background-image: url(../img/heart_icon.png);
+    background-repeat: space;
+    background-size: 30px; 
+    background-color: white; 
+}
+
+.background_pozition_example p {
+    display: inline-block; 
+    max-width: 300px;
+    margin-bottom: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: white; 
+}
+
+p.bottom_right {
+    background-image: url(../img/vader_logo.png);
+    background-position: bottom right;
+}
+p.px_example {
+    background-image: url(../img/vader_logo.png);
+    background-position: 100px 100px;
+}
+p.percentage_example {
+    background-image: url(../img/vader_logo.png);
+    background-position: 50%;
 } 
+
+.background_attachment p {
+    display: block;
+    background-image: url(../img/brick_wall_background.jpg);
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.universal_example p {
+    background: url(../img/heart_icon.png) repeat center / 10% greenyellow;
+}
+
+.list li {
+    background-image: url(../img/vader_logo.png);
+    max-width: 300px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    background-position: right;
+    text-decoration: underline;
+}
+
+div.part_3 {
+    max-width: 237px;
+    background: #F5F5F5; 
+    }
+
+.part_3 h6 {
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.15px;
+color: #4B4B4B;
+text-transform: uppercase;
+text-align: left;
+margin-bottom: 36px;
+}
+
+.contact li {
+    max-width: 200px;
+    padding-left: 36px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;  
+    background-position: left;
+}
+
+li.adress {
+    background-image: url(../img/place.png);
+    margin-bottom: 16px;
+}
+li.telephone {
+    background-image: url(../img/smartphone.png);
+    margin-bottom: 16px;
+}
+li.email {
+    background-image: url(../img/email.png);
+    margin-bottom: 16px;
+}
+li.time {
+    background-image: url(../img/timer.png);
+}
