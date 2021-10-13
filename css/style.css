@@ -226,7 +226,7 @@ div.car_image {
    letter-spacing: 2.5px;
    text-transform: uppercase;
    color: #d5d5d5;
-   padding-bottom: 33px;
+   margin-bottom: 33px;
 }
 div.logo {
    display: inline-block;
